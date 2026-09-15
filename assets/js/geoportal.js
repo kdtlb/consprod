@@ -237,6 +237,7 @@
 
   setText('st-ha', Math.round(totalHa).toLocaleString('es-BO'));
   setText('st-predios', predios);
+  setText('st-predios-ha', totalHa > 0 ? '+' + (Math.floor(totalHa / 1000) * 1000).toLocaleString('es-BO') + ' ha' : '');
   setText('st-artesanas', artes);
   setText('st-apicultura', apis);
 
