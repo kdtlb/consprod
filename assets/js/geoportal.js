@@ -76,7 +76,6 @@
       + (p.Integrantes != null ? '<dt>Integrantes</dt><dd>' + num(p.Integrantes, 0) + '</dd>' : '')
       + (p.Departamento ? '<dt>Departamento</dt><dd>' + esc(p.Departamento) + '</dd>' : '')
       + '</dl>'
-      + '<p style="margin:.6rem 0 0;font-size:.88rem;color:#6C746A">Producción de miel asociada a la floración del bosque chaqueño.</p>'
       + '</div>';
   }
   function popupArtesanas(p) {
@@ -93,7 +92,6 @@
     return '<div class="gp-pop">'
       + '<span class="kind" style="background:#dce8f1;color:#2f5d80">Turismo comunitario</span>'
       + '<div class="ttl">' + esc(p.Nombre || 'Comunidad') + '</div>'
-      + '<p style="margin:0;font-size:.88rem;color:#6C746A">Comunidad con iniciativa de turismo comunitario.</p>'
       + '</div>';
   }
 
