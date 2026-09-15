@@ -239,6 +239,12 @@
   setText('st-predios', predios);
   setText('st-artesanas', artes);
   setText('st-apicultura', apis);
+
+  // Integrantes totales (redondeado a la centena inferior) — dato real de los geojson
+  function sumInt(fc) { var t = 0; if (fc) { fc.features.forEach(function (f) { t += (f.properties && f.properties.Integrantes) || 0; }); } return t; }
+  function roundInt(t) { return t > 0 ? '+' + (Math.floor(t / 100) * 100).toLocaleString('es-BO') + ' integrantes' : ''; }
+  setText('st-apicultura-int', roundInt(sumInt(DATA.GP_APICULTURA)));
+  setText('st-artesanas-int', roundInt(sumInt(DATA.GP_ARTESANAS)));
   setText('st-turismo', turis);
   setText('st-pueblos', Object.keys(pueblos).length);
 
