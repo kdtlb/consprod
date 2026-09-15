@@ -721,7 +721,7 @@ section[id] { scroll-margin-top: 5rem; }
 .cp-carrusel__track::-webkit-scrollbar { height: 6px; }
 .cp-carrusel__track::-webkit-scrollbar-thumb { background: var(--line); }
 .cp-slide { flex: 0 0 clamp(18rem, 40vw, 50rem); scroll-snap-align: start; margin: 0; }
-.cp-slide img { width: 100%; height: clamp(30rem, 28vw, 22rem); object-fit: cover; filter: none; display: block; }
+.cp-slide img { width: 100%; height: clamp(18rem, 42vw, 38rem); object-fit: cover; filter: none; display: block; }
 .cp-slide figcaption { font-family: var(--display); text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.7rem; color: var(--muted); margin-top: 0.7rem; }
 .cp-carrusel__nav { display: flex; gap: 0.6rem; justify-content: flex-end; margin-top: 1.1rem; }
 .cp-carrusel__btn { width: 2.9rem; height: 2.9rem; border: 1.5px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; display: grid; place-items: center; transition: background 0.25s var(--ease), color 0.25s; }
